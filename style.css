@@ -1,0 +1,208 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* 텍스트 드래그 색상 */
+::selection {
+  color: #ffffff;
+  background-color: #8D71D9;
+}
+
+/* 스크롤바 스타일링 */
+::-webkit-scrollbar {
+  width: 4px; /* 스크롤바의 두께 */
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: none; /* 트랙(스크롤바 배경) 색상 */
+  border-radius: 10px; /* 둥근 모서리 */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8D71D9; /* 스크롤 막대 색상 */
+  border-radius: 10px; /* 둥근 모서리 */
+  border: 0px solid #8D71D9; /* 스크롤 막대와 트랙 사이의 간격 */
+}
+
+/* 기본 셋팅 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    word-break: keep-all;
+    letter-spacing: -0.025em;
+}
+
+/* 헤더 */
+.header {
+    display: flex;
+    justify-content: space-between; /* 콘텐츠 좌우 배치 */
+    align-items: start; /* 세로 정렬 중앙 */
+    padding: 20px 32px; /* 상하/좌우 padding */
+    background-color: #ffffff; /* 헤더 배경색 */
+    color: #000000;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.header-left {
+    font-size: 16px;
+    font-weight: 500; /* Medium */
+    letter-spacing: -0.025em; /* 글자 간격 */
+    line-height: 24px; /* 줄 높이 */
+}
+
+.header-logo {
+    margin: 0; /* p 태그 기본 여백 제거 */
+}
+
+.header-right .menu {
+    display: flex; /* 메뉴를 가로로 배치 */
+    gap: 32px; /* li 간 간격 지정 */
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    padding: 0; /* ul 패딩 제거 */
+    margin: 0; /* ul 마진 제거 */
+    line-height: 24px;
+}
+
+.menu li a {
+    text-decoration: none; /* 기본 링크 밑줄 제거 */
+    color: #000000; /* 글자 색상 */
+    font-size: 16px;
+    font-weight: 500; /* Medium */
+}
+
+.menu li a.on {
+    text-decoration: underline; /* hover 시 밑줄 추가 */
+    text-underline-offset: 2px;
+}
+
+.menu li a:hover {
+    text-decoration: underline; /* hover 시 밑줄 추가 */
+    text-underline-offset: 2px;
+}
+
+/* 메인 콘텐츠 */
+.main {
+  margin-top: 120px;
+  padding: 120px 0;
+  width: 100%;
+}
+
+.main-logo {
+  padding: 0 32px;
+}
+
+.main-list {
+  padding: 0 32px;
+  margin-top: 40px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 한 줄에 3개의 열 */
+  gap: 32px; /* 썸네일 간의 간격 */
+  list-style: none; /* 기본 리스트 스타일 제거 */
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .main-grid {
+    grid-template-columns: repeat(2, 1fr); /* 모바일에서 한 줄에 2개의 열 */
+  }
+}
+
+.main-grid li {
+  position: relative;
+  overflow: hidden; /* 이미지가 박스 밖으로 나가지 않도록 설정 */
+  background-color: #f5f5f7; /* 썸네일 배경색 */
+  cursor: pointer;
+  font-size: 0;
+}
+
+.main-grid li img {
+  width: 100%; /* 이미지 박스에 꽉 채워지도록 조정 */
+  height: auto; /* 이미지 비율 유지 */
+  display: block; /* 이미지는 블록 형식으로 출력 */
+}
+
+.main-grid li .thumbnail-video {
+    width: 100%; /* 영상 크기: 썸네일 컨테이너에 맞춤 */
+    height: auto; /* 자동 비율 유지 */
+    display: block; /* 블록 요소로 표시 */
+    object-fit: cover; /* 썸네일 크기에 맞게 잘라냄 */
+    background-color: #f5f5f7; /* 검은색 기본 배경 */
+}
+
+.main-grid li::after {
+  content: ''; /* 빈 콘텐츠 생성 */
+  position: absolute; /* 썸네일 안의 오버레이로 배치 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* 초기 투명도 */
+  transition: background-color 0.3s ease; /* 부드러운 효과 */
+}
+
+.main-grid li:hover::after {
+  background-color: rgba(0, 0, 0, 0.2); /* 검정색 딤드 효과 */
+}
+
+/* 푸터 */
+.footer {
+    display: flex;
+    justify-content: space-between; /* 콘텐츠 좌우 배치 */
+    align-items: start; /* 세로 정렬 중앙 */
+    padding: 20px 32px; /* 상하/좌우 padding */
+    background-color: #F2D230; /* 푸터 배경색 */
+    color: #000000;
+}
+
+.footer p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.025em;
+}
+
+/* About */
+.visual {
+  width: 100%;
+  height: auto;
+  padding: 0 32px;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 0;
+}
+
+.visual video {
+  width: 100%;
+  height: auto;
+}
+
+/* Contact */
+.black {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.black li {
+  color: #fff !important;
+}
+
+.black li a {
+  color: #fff !important;
+}
