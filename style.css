@@ -178,6 +178,10 @@ html, body {
   letter-spacing: -0.025em;
 }
 
+.footer.skyblue {
+  background-color: #B8E2FB;
+}
+
 /* About */
 .visual {
   width: 100%;
@@ -193,6 +197,66 @@ html, body {
   height: auto;
 }
 
+.contents {
+  width: 100%;
+  height: auto;
+  padding: 0 32px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+
+.prgWrap {
+  width: 50%;
+}
+
+.paragraph {
+  margin-top: 64px;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.paragraph h4 {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.025em;
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.paragraph p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.025em;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.imgWrap {
+  width: 50%;
+}
+
+.imgWrap img {
+  width: 100%;
+  height: auto;
+}
+
+.imgWrap p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.025em;
+  width: 100%;
+}
+
 /* Contact */
 .black {
   background-color: #000 !important;
@@ -205,4 +269,8 @@ html, body {
 
 .black li a {
   color: #fff !important;
+}
+
+.black .paragraph h4 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
 }
