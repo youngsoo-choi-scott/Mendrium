@@ -182,6 +182,10 @@ html, body {
   background-color: #B8E2FB;
 }
 
+.footer.purple {
+  background-color: #F7BAF7;
+}
+
 /* About */
 .visual {
   width: 100%;
