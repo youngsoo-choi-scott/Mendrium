@@ -217,6 +217,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center left;
   background-size: contain;
+  transition: 0.3s ease;
 }
 
 .footer-wrap ul li a.link-b {
@@ -225,6 +226,14 @@ html, body {
 
 .footer-wrap ul li a.link-m {
   background-image: url("images/footer_logo_mendrium.svg");
+}
+
+.footer-wrap ul li a.link-b:hover {
+  background-image: url("images/footer_logo_box102_w.svg");
+}
+
+.footer-wrap ul li a.link-m:hover {
+  background-image: url("images/footer_logo_mendrium_w.svg");
 }
 
 .footer.skyblue {
@@ -257,6 +266,10 @@ html, body {
 
 .mt64 {
   margin-top: 64px;
+}
+
+.pt64 {
+  padding-top: 64px;
 }
 
 .contents {
