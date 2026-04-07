@@ -348,7 +348,7 @@ html, body {
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'><g clip-path='url(%23clip0_1593_568)'><path d='M7 7H14M14 7V14M14 7L7 14' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></g><defs><clipPath id='clip0_1593_568'><rect width='20' height='20' fill='white'/></clipPath></defs></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'><g clip-path='url(%23clip0_1593_568)'><path d='M7 7H14M14 7V14M14 7L7 14' stroke='currentColor' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/></g><defs><clipPath id='clip0_1593_568'><rect width='20' height='20' fill='white'/></clipPath></defs></svg>");
 }
 
 .imgWrap {
@@ -418,7 +418,7 @@ html, body {
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'><g clip-path='url(%23clip0_1593_568)'><path d='M7 7H14M14 7V14M14 7L7 14' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></g><defs><clipPath id='clip0_1593_568'><rect width='20' height='20' fill='white'/></clipPath></defs></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'><g clip-path='url(%23clip0_1593_568)'><path d='M7 7H14M14 7V14M14 7L7 14' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/></g><defs><clipPath id='clip0_1593_568'><rect width='20' height='20' fill='white'/></clipPath></defs></svg>");
 }
 
 .black .paragraph a:hover {
