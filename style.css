@@ -239,7 +239,7 @@ html, body {
 
 .menu-list li a {
   display: block;
-  padding: 24px 16px;
+  padding: 16px 16px;
   color: #000;
   text-decoration: none;
   font-size: 28px;
@@ -258,7 +258,7 @@ html, body {
 .menu-footer {
   list-style: none;
   margin: 0;
-  padding: 0 0 24px 0;
+  padding: 0 0 16px 0;
 }
 
 .menu-footer li a {
