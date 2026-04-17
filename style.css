@@ -463,6 +463,12 @@ html, body {
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .visual {
+    padding: 32px 16px 0;
+  }
+}
+
 .mt64 {
   margin-top: 64px;
 }
@@ -483,6 +489,14 @@ html, body {
   gap: 64px;
 }
 
+@media (max-width: 768px) {
+  .contents {
+    padding: 0 16px;
+    margin-top: 32px;
+    flex-direction: column;
+  }
+}
+
 .prgWrap {
   width: 50%;
 }
@@ -492,6 +506,17 @@ html, body {
   font-weight: 500;
   line-height: 54px;
   letter-spacing: -0.025em;
+}
+
+@media (max-width: 768px) {
+  .prgWrap {
+    width: 100%;
+  }
+
+  .prgWrap h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 
 .paragraph {
@@ -514,6 +539,12 @@ html, body {
   width: 100%;
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .paragraph h4 {
+    font-size: 18px;
+  }
 }
 
 .paragraph p {
@@ -554,6 +585,12 @@ html, body {
   width: 50%;
 }
 
+@media (max-width: 768px) {
+  .imgWrap {
+    width: 100%;
+  }
+}
+
 .imgWrap img {
   width: 100%;
   height: auto;
@@ -579,6 +616,12 @@ html, body {
 .contents_detail img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .contents_detail {
+    padding: 0 16px;
+  }
 }
 
 /* Contact */
@@ -638,4 +681,5 @@ html, body {
 
 .prgTable td.pr {
   padding-right: 8px;
+  vertical-align: baseline;
 }
